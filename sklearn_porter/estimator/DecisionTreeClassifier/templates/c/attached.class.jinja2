@@ -64,6 +64,7 @@ void predict_proba(double *result, double features[N_FEATURES], int node) {
     }
 }
 
+#ifdef STANDALONE
 int main(int argc, const char *argv[]) {
 
     /* Features: */
@@ -98,4 +99,5 @@ int main(int argc, const char *argv[]) {
 
     return 0;
 }
+#endif
 {% endblock %}
