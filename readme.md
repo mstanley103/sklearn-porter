@@ -1,3 +1,11 @@
+Version 1.0.0 of this repo is a fork of nok/sklearn-porter.  I've added a separate branch (candidate/1.0.1) for my changes, which are minimal at this point.
+
+**Warning to those looking at this: When I compare the results of C-code model generated for a known scikit-Learn decision tree against the original, I am not seeing full agreement.
+My testcase showed only 81% agreement between the two on the same feature set.
+The generated C-code is data-driven and recursive in nature, and (to me at least) is not as readable.**  Those other translators 
+(mc2gen and emlearn) generate code that preserves the IF-THEN-ELSE structure and are very readable.  Their results also matched scikit-Learn's model precisely on my testcase.
+
+The remainder of this readme.md matches nok's original  I've not made any other adjustments.  My thanks to him for making the library available.
 
 # sklearn-porter
 
